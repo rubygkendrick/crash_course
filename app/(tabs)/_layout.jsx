@@ -12,7 +12,8 @@ const TabIcon = ({ icon, color, name, focused }) => {
                 className="w-6 h-6"
             />
             <Text
-                className={`${focused ? 'font-psemibold' : 'font-pregular}'} text-xs `} style={{color:color}}>
+                className={`${focused ? 'font-psemibold' : 'font-pregular}'} text-xs `}
+                style={{ color: color }}>
                 {name}
             </Text>
         </View>
@@ -31,7 +32,7 @@ const TabsLayout = () => {
                         backgroundColor: 'black',
                         borderTopWidth: 1,
                         borderTopColor: '2#32533',
-                        height: 84, 
+                        height: 84,
                     }
                 }}
             >
@@ -50,7 +51,7 @@ const TabsLayout = () => {
                         )
                     }}
                 />
-                 <Tabs.Screen
+                <Tabs.Screen
                     name="upcoming"
                     options={{
                         title: 'Upcoming',
@@ -65,7 +66,7 @@ const TabsLayout = () => {
                         )
                     }}
                 />
-                 <Tabs.Screen
+                <Tabs.Screen
                     name="search"
                     options={{
                         title: 'Search',
@@ -80,7 +81,7 @@ const TabsLayout = () => {
                         )
                     }}
                 />
-                 <Tabs.Screen
+                <Tabs.Screen
                     name="profile"
                     options={{
                         title: 'Profile',
